@@ -10,7 +10,19 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        VStack {
+            Text("Hit the target")
+                .font(.headline)
+                .fontWeight(.semibold)
+                .foregroundColor(Color.orange)
+            Slider(value: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant(10)/*@END_MENU_TOKEN@*/)
+            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                Text("Hit Me")
+                    .fontWeight(.semibold)
+                    .foregroundColor(Color.purple)
+                    .padding(.all, 3.0)
+            }
+        }
     }
 }
 
